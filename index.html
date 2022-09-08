@@ -12,6 +12,7 @@ body, html {width: 100%; height: 100%; margin: 0; padding: 0}
     <p style="margin-left: 40px"><a href="https://jupyterlite.readthedocs.io/en/latest/">Jupyterlite</a> is provided here as an environment for trying out Python.</p>
     <p style="margin-left: 40px">Try some of these code snippets<br>for a in range(10):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(a)</p>
     <p style="margin-left: 40px">from sympy import Integral, sqrt, symbols, init_printing<br>init_printing()<br>x = symbols('x')<br>Integral(sqrt(1 / x), x)</p>
+    <p style="margin-left: 40px">from matplotlib import pyplot as plt<br>import numpy as np<br><br># Generate 100 random data points along 3 dimensions<br>x, y, scale = np.random.randn(3, 100)<br>fig, ax = plt.subplots()<br># Map each onto a scatterplot we'll create with Matplotlib<br>ax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)<br>ax.set(title="Some random data, created with JupyterLab!")<br>plt.show()</p>
   </div>
   <div class="second-row">
     <iframe src="https://jupyterlite.readthedocs.io/en/latest/_static/repl/index.html?toolbar=1t"></iframe>
